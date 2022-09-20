@@ -1,0 +1,21 @@
+{
+  "name": "next12-initial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "next12-initial": "./src/index.js"
+  },
+  "dependencies": {
+    "commander": "^9.1.0",
+    "degit": "^2.8.4",
+    "inquirer": "^8.2.2",
+    "lodash.kebabcase": "^4.1.1"
+  }
+}
