@@ -12,6 +12,10 @@
   "bin": {
     "next12-initial": "./src/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hunghg2505/next12-initial"
+  },
   "dependencies": {
     "commander": "^9.1.0",
     "degit": "^2.8.4",
