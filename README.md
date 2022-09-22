@@ -4,7 +4,7 @@
 ## Get started
 
 ```bash
-npx next12-initial
+npx fe-cli
 ```
 
 ## Examples
@@ -12,11 +12,11 @@ npx next12-initial
 Name your project
 
 ```bash
-npx next12-initial my-app
+npx fe-cli my-app
 ```
 
 Generate your project in the current working directory
 
 ```bash
-npx next12-initial .
+npx fe-cli .
 ```
