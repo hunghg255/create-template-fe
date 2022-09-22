@@ -1,6 +1,6 @@
 {
-  "name": "next12-initial",
-  "version": "1.0.0",
+  "name": "fe-cli",
+  "version": "1.0.2",
   "description": "",
   "main": "./src/index.js",
   "scripts": {
@@ -10,11 +10,11 @@
   "author": "",
   "license": "ISC",
   "bin": {
-    "next12-initial": "./src/index.js"
+    "fe-cli": "./src/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hunghg2505/next12-initial"
+    "url": "https://github.com/hunghg2505/fe-cli"
   },
   "dependencies": {
     "commander": "^9.1.0",

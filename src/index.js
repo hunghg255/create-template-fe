@@ -6,13 +6,19 @@ const path = require('path');
 const fs = require('fs');
 const degit = require('degit');
 const kebabCase = require('lodash.kebabcase');
+const templates = require("./templates");
 
 program.option('-t, --template <template>', 'Specify the template');
 program.option('--with-yarn', 'Use yarn to install packages');
 
 program.parse();
 
+const options = program.opts();
+
 let name = program.args[0];
+
+let template =
+  options.template in templates ? templates[options.template].name : null;
 
 (async () => {
   if (!name) {
@@ -45,6 +51,22 @@ let name = program.args[0];
     }
   }
 
+
+  if (!template) {
+    template = (
+      await inquirer.prompt({
+        type: "list",
+        name: "template",
+        message: "Choose a template",
+        choices: Object.values(templates).map((temp) => temp.name),
+      })
+    ).template;
+  }
+
+  const templateId = Object.entries(templates).find(
+    ([key, value]) => value.name === template
+  )[0];
+
   const emitter = degit(`https://github.com/hunghg2505/nextjs-init.git`, {
     cache: false,
     force: true,
@@ -69,4 +91,31 @@ let name = program.args[0];
   );
 
   console.log(`\n🎉 Successfully created your project!\n`);
+
+//   const emitter = degit(`https://github.com/hunghg2505/fe-template/${templateId}`, {
+//     cache: false,
+//     force: true,
+//     verbose: true,
+//     mode: 'tar',
+//   });
+
+//   await emitter.clone(directory);
+// console.log(emitter)
+//   // const packageJSON = JSON.parse(
+//   //   fs.readFileSync(path.resolve(directory, 'package.json'), {
+//   //     encoding: 'utf-8',
+//   //   })
+//   // );
+
+//   // packageJSON.name = kebabCase(directory.split('/').slice(-1)[0]);
+
+//   // fs.writeFileSync(
+//   //   path.resolve(directory, 'package.json'),
+//   //   JSON.stringify(packageJSON, null, 2),
+//   //   { encoding: 'utf-8' }
+//   // );
+
+//   // execSync(`${packageManager} install`, { cwd: directory, stdio: 'inherit' });
+
+//   console.log(`\n🎉 Successfully created your project!\n`);
 })();
