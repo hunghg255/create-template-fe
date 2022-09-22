@@ -1,6 +1,4 @@
 
-# Nextjs Recoil Antd
-
 ## Get started
 
 ```bash
