@@ -1,5 +1,5 @@
 
-# Vity
+# Agiletech Frontend CLI
 
 [![Version](https://img.shields.io/npm/v/vity?style=flat&color=success)](https://www.npmjs.com/package/fe-cli)
 
