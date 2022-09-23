@@ -8,7 +8,7 @@ CLI based on frontend to generate your project easily
 ## Get started
 
 ```bash
-npx agile-fe-cli
+npx agile-fe
 ```
 
 ## Examples
@@ -16,11 +16,11 @@ npx agile-fe-cli
 Name your project
 
 ```bash
-npx agile-fe-cli my-app
+npx agile-fe my-app
 ```
 
 Generate your project in the current working directory
 
 ```bash
-npx agile-fe-cli .
+npx agile-fe .
 ```

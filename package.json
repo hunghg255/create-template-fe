@@ -1,6 +1,6 @@
 {
-  "name": "agile-fe-cli",
-  "version": "1.0.2",
+  "name": "agile-fe",
+  "version": "1.0.3",
   "description": "[![Version](https://img.shields.io/npm/v/vity?style=flat&color=success)](https://www.npmjs.com/package/fe-cli)",
   "main": "./src/index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "author": "hunghg",
   "license": "ISC",
   "bin": {
-    "agile-fe-cli": "src/index.js"
+    "agile-fe": "src/index.js"
   },
   "repository": {
     "type": "git",
