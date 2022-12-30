@@ -19,7 +19,10 @@ const templates = {
     name: 'HTML, CSS, JS',
   },
   'next12-antd-recoil': {
-    name: 'Next12, Antd, Recoil',
+    name: 'Next12, Antd, Recoil, Typescript',
+  },
+  'vite-react-ts': {
+    name: 'Vite, React18, Typescript',
   },
 };
 
