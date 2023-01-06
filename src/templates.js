@@ -18,6 +18,9 @@ const templates = {
   'html-css-js': {
     name: 'HTML, CSS, JS',
   },
+  'fe-webpack': {
+    name: 'HTML, CSS, JS, Webpack',
+  },
   'next12-antd-recoil': {
     name: 'Next12, Antd, Recoil, Typescript',
   },
