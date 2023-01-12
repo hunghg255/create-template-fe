@@ -21,11 +21,15 @@ const templates = {
   'fe-webpack': {
     name: 'HTML, CSS, JS, Webpack',
   },
+  'vite-react-ts': {
+    name: 'Vite, React18, Typescript',
+  },
+
   'next12-antd-recoil': {
     name: 'Next12, Antd, Recoil, Typescript',
   },
-  'vite-react-ts': {
-    name: 'Vite, React18, Typescript',
+  'vite-react-antd': {
+    name: 'Vite, Antd, Recoil, Typescript',
   },
 };
 
