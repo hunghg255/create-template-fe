@@ -24,6 +24,9 @@ const templates = {
   'vite-react-ts': {
     name: 'Vite, React18, Typescript',
   },
+  'vite-react-swc-init': {
+    name: 'Vite, React18, Typescript, SWC',
+  },
 
   'next12-antd-recoil': {
     name: 'Next12, Antd, Recoil, Typescript',

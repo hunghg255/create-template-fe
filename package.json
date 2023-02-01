@@ -1,12 +1,15 @@
 {
   "name": "create-template-fe",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "[![Version](https://img.shields.io/npm/v/vity?style=flat&color=success)](https://www.npmjs.com/package/fe-cli)",
   "main": "./src/index.js",
   "scripts": {
     "start": "node src"
   },
-  "keywords": [],
+  "keywords": [
+    "frontend template",
+    "frontend cli"
+  ],
   "author": "hunghg",
   "license": "ISC",
   "bin": {
@@ -14,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hunghg2505/fe-cli.git"
+    "url": "git+https://github.com/hunghg255/create-template-fe.git"
   },
   "dependencies": {
     "commander": "^9.1.0",
@@ -23,8 +26,8 @@
     "lodash.kebabcase": "^4.1.1"
   },
   "bugs": {
-    "url": "https://github.com/hunghg2505/fe-cli/issues"
+    "url": "https://github.com/hunghg255/create-template-fe/issues"
   },
-  "homepage": "https://github.com/hunghg2505/fe-cli#readme",
+  "homepage": "https://github.com/hunghg255/create-template-fe#readme",
   "devDependencies": {}
 }
