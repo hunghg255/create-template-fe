@@ -27,12 +27,14 @@ const templates = {
   'vite-react-swc-init': {
     name: 'Vite, React18, Typescript, SWC',
   },
-
-  'next12-antd-recoil': {
-    name: 'Next12, Antd, Recoil, Typescript',
-  },
   'vite-react-antd': {
-    name: 'Vite, Antd, Recoil, Typescript',
+    name: 'Vite, Antd, Recoil, i18n, Typescript',
+  },
+  'next12-antd-recoil': {
+    name: 'Next12, Antd, Recoil, i18n, Typescript',
+  },
+  'next13-antd-jotai': {
+    name: 'Next12, Antd, Jotai, i18n, Typescript',
   },
 };
 
