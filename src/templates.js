@@ -34,7 +34,7 @@ const templates = {
     name: 'Next12, Antd, Recoil, i18n, Typescript',
   },
   'next13-antd-jotai': {
-    name: 'Next12, Antd, Jotai, i18n, Typescript',
+    name: 'Next13, Antd, Jotai, i18n, Typescript',
   },
 };
 
