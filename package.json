@@ -1,6 +1,6 @@
 {
   "name": "create-template-fe",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "[![Version](https://img.shields.io/npm/v/vity?style=flat&color=success)](https://www.npmjs.com/package/fe-cli)",
   "main": "./src/index.js",
   "scripts": {
