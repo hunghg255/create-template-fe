@@ -1,42 +1,27 @@
 #! /usr/bin/env node
 
-const { program } = require('commander');
-const inquirer = require('inquirer');
 const path = require('path');
 const fs = require('fs');
 const degit = require('degit');
 const kebabCase = require('lodash.kebabcase');
 const templates = require('./templates');
-
-program.option('-t, --template <template>', 'Specify the template');
-program.option('--with-yarn', 'Use yarn to install packages');
-
-program.parse();
-
-const options = program.opts();
-
-let name = program.args[0];
-
-let template =
-  options.template in templates ? templates[options.template].name : null;
+const prompts = require('prompts');
 
 (async () => {
-  if (!name) {
-    name = (
-      await inquirer.prompt({
-        type: 'input',
-        message: "What's the name of your app?",
-        default: 'my-app',
-        name: 'name',
-      })
-    ).name;
-  }
+  const name = (
+    await prompts({
+      type: 'text',
+      message: "What's the name of your app?",
+      initial: 'my-app',
+      name: 'name',
+    })
+  ).name;
 
   const directory = path.resolve(process.cwd(), name);
 
   if (fs.existsSync(directory) && fs.readdirSync(directory).length > 0) {
     console.log(`⚙️ ${directory}`);
-    const { willRemoveFiles } = await inquirer.prompt({
+    const { willRemoveFiles } = await prompts({
       type: 'confirm',
       name: 'willRemoveFiles',
       message: 'Directory is not empty. Remove existing files and continue?',
@@ -51,22 +36,19 @@ let template =
     }
   }
 
-  if (!template) {
-    template = (
-      await inquirer.prompt({
-        type: 'list',
-        name: 'template',
-        message: 'Choose a template',
-        choices: Object.values(templates).map((temp) => temp.name),
-      })
-    ).template;
-  }
+  const template = (
+    await prompts({
+      type: 'select',
+      name: 'value',
+      message: 'Choose a template',
+      choices: templates.map((temp) => ({
+        title: temp.name,
+        value: temp.githubPath,
+      })),
+    })
+  ).value;
 
-  const templateId = Object.entries(templates).find(
-    ([key, value]) => value.name === template
-  )[0];
-
-  const emitter = degit(`https://github.com/hunghg255/${templateId}.git`, {
+  const emitter = degit(`https://github.com/hunghg255/${template}.git`, {
     cache: false,
     force: true,
     verbose: true,
@@ -75,7 +57,7 @@ let template =
 
   await emitter.clone(directory);
 
-  if (templateId !== 'html-css-js') {
+  if (template !== 'html-css-js') {
     const packageJSON = JSON.parse(
       fs.readFileSync(path.resolve(directory, 'package.json'), {
         encoding: 'utf-8',
