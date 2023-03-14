@@ -36,19 +36,35 @@ const prompts = require('prompts');
     }
   }
 
-  const template = (
+  const templateLabel = (
     await prompts({
       type: 'select',
       name: 'value',
-      message: 'Choose a template',
-      choices: templates.map((temp) => ({
-        title: temp.name,
-        value: temp.githubPath,
+      message: 'Select a framework',
+      choices: templates.map((it) => ({
+        title: it.color(it.framwork),
+        value: it.framwork,
       })),
     })
   ).value;
 
-  const emitter = degit(`https://github.com/hunghg255/${template}.git`, {
+  const frameworkSelected = templates.find(
+    (it) => it.framwork === templateLabel
+  );
+
+  const templateId = (
+    await prompts({
+      type: 'select',
+      name: 'value',
+      message: 'Select a variant',
+      choices: frameworkSelected.variants.map((item) => ({
+        title: item.color(item.name),
+        value: item.githubPath,
+      })),
+    })
+  ).value;
+
+  const emitter = degit(`https://github.com/hunghg255/${templateId}.git`, {
     cache: false,
     force: true,
     verbose: true,
@@ -57,7 +73,7 @@ const prompts = require('prompts');
 
   await emitter.clone(directory);
 
-  if (template !== 'html-css-js') {
+  if (templateId !== 'html-css-js') {
     const packageJSON = JSON.parse(
       fs.readFileSync(path.resolve(directory, 'package.json'), {
         encoding: 'utf-8',
