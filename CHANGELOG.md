@@ -1,5 +1,11 @@
 # create-template-fe
 
+## 1.1.2
+
+### Patch Changes
+
+- 886bbb0: update package.json
+
 ## 1.1.1
 
 ### Patch Changes
