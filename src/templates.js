@@ -36,6 +36,9 @@ const templates = {
   'next13-antd-jotai': {
     name: 'Next13, Antd, Jotai, i18n, Typescript',
   },
+  'next13-tailwindcss-jotai': {
+    name: 'Next13, Tailwindcss, Jotai, i18n, Typescript',
+  },
 };
 
 module.exports = templates;
