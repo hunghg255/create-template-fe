@@ -1,5 +1,11 @@
 # create-template-fe
 
+## 1.1.1
+
+### Patch Changes
+
+- 637f4bc: add color text
+
 ## 1.1.0
 
 ### Minor Changes
