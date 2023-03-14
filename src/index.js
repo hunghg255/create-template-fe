@@ -48,9 +48,10 @@ const prompts = require('prompts');
     })
   ).value;
 
-  const frameworkSelected = templates.find(
-    (it) => it.framwork === templateLabel
-  );
+  const frameworkSelected =
+    templates.find((it) => it.framwork === templateLabel) || {};
+
+  if (!frameworkSelected.variants) return;
 
   const templateId = (
     await prompts({
@@ -63,6 +64,8 @@ const prompts = require('prompts');
       })),
     })
   ).value;
+
+  if (!templateId) return;
 
   const emitter = degit(`https://github.com/hunghg255/${templateId}.git`, {
     cache: false,
