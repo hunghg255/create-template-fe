@@ -34,11 +34,13 @@ const templates = [
         name: 'HTML, CSS, JS',
         githubPath: 'html-css-js',
         color: green,
+        githubRepo: 'https://github.com/hunghg255/html-css-js.git',
       },
       {
         name: 'HTML, CSS, JS, Webpack',
         githubPath: 'fe-webpack',
         color: cyan,
+        githubRepo: 'https://github.com/hunghg255/fe-webpack.git',
       },
     ],
   },
@@ -48,18 +50,18 @@ const templates = [
     variants: [
       {
         name: 'Vitejs, React18, Typescript',
-        githubPath: 'vite-react-ts',
         color: green,
+        githubRepo: 'https://github.com/hunghg255/vite-react-ts.git',
       },
       {
         name: 'Vitejs, React18, Typescript, SWC',
-        githubPath: 'vite-react-swc-init',
         color: lightRed,
+        githubRepo: 'https://github.com/hunghg255/vite-react-swc-init.git',
       },
       {
         name: 'Vitejs, Antd, Recoil, i18n, Typescript',
-        githubPath: 'vite-react-antd',
         color: yellow,
+        githubRepo: 'https://github.com/hunghg255/vite-react-antd.git',
       },
     ],
   },
@@ -69,18 +71,18 @@ const templates = [
     variants: [
       {
         name: 'Next12, Antd, Recoil, i18n, Typescript',
-        githubPath: 'next12-antd-recoil',
         color: red,
+        githubRepo: 'https://github.com/hunghg255/next12-antd-recoil.git',
       },
       {
         name: 'Next13, Antd, Jotai, i18n, Typescript',
-        githubPath: 'next13-antd-jotai',
         color: yellow,
+        githubRepo: 'https://github.com/hunghg255/next13-antd-jotai.git',
       },
       {
         name: 'Next13, Tailwindcss, Jotai, i18n, Typescript',
-        githubPath: 'next13-tailwindcss-jotai',
         color: cyan,
+        githubRepo: 'https://github.com/hunghg255/next13-tailwindcss-jotai.git',
       },
     ],
   },

@@ -53,21 +53,21 @@ const prompts = require('prompts');
 
   if (!frameworkSelected.variants) return;
 
-  const templateId = (
+  const githubRepo = (
     await prompts({
       type: 'select',
       name: 'value',
       message: 'Select a variant',
       choices: frameworkSelected.variants.map((item) => ({
         title: item.color(item.name),
-        value: item.githubPath,
+        value: item.githubRepo,
       })),
     })
   ).value;
 
-  if (!templateId) return;
+  if (!githubRepo) return;
 
-  const emitter = degit(`https://github.com/hunghg255/${templateId}.git`, {
+  const emitter = degit(githubRepo, {
     cache: false,
     force: true,
     verbose: true,
@@ -76,7 +76,7 @@ const prompts = require('prompts');
 
   await emitter.clone(directory);
 
-  if (templateId !== 'html-css-js') {
+  if (!githubRepo.includes('html-css-js')) {
     const packageJSON = JSON.parse(
       fs.readFileSync(path.resolve(directory, 'package.json'), {
         encoding: 'utf-8',
