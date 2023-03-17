@@ -1,5 +1,11 @@
 # create-template-fe
 
+## 1.1.4
+
+### Patch Changes
+
+- f8f82ee: update script
+
 ## 1.1.3
 
 ### Patch Changes
