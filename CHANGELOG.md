@@ -1,5 +1,11 @@
 # create-template-fe
 
+## 1.1.3
+
+### Patch Changes
+
+- 0e22e0c: update readme
+
 ## 1.1.2
 
 ### Patch Changes
