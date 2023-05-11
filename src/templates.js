@@ -75,14 +75,19 @@ const templates = [
         githubRepo: 'https://github.com/hunghg255/next12-antd-recoil.git',
       },
       {
-        name: 'Next13, Antd, Jotai, i18n, Typescript',
+        name: 'Next13, Antd, Jotai, i18n, Typescript (Page Router)',
         color: yellow,
         githubRepo: 'https://github.com/hunghg255/next13-antd-jotai.git',
       },
       {
-        name: 'Next13, Tailwindcss, Jotai, i18n, Typescript',
+        name: 'Next13, Tailwindcss, Jotai, i18n, Typescript (Page Router)',
         color: cyan,
         githubRepo: 'https://github.com/hunghg255/next13-tailwindcss-jotai.git',
+      },
+      {
+        name: 'Next13 (App Router)',
+        color: green,
+        githubRepo: 'https://github.com/hunghg255/next13-app-dir-template',
       },
     ],
   },
