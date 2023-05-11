@@ -1,5 +1,11 @@
 # create-template-fe
 
+## 1.1.5
+
+### Patch Changes
+
+- b9503b1: update next13 app router
+
 ## 1.1.4
 
 ### Patch Changes
