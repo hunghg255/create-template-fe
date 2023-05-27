@@ -4,9 +4,6 @@ on:
     workflows: ["CI"]
     types:
       - completed
-  push:
-    branches:
-      - 'master'
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
