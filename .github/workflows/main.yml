@@ -2,7 +2,11 @@ name: CI
 on:
   push:
     branches:
-      - "**"
+      - master
+
+  pull_request:
+    branches:
+      - master
 
 jobs:
   build:
@@ -14,4 +18,4 @@ jobs:
           node-version: 18.x
 
       - run: npm install
-      - run: npm run build
+      - run: npm run lint && npm run build
