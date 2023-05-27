@@ -9,21 +9,7 @@ const {
   magenta,
   red,
   yellow,
-  violet,
 } = require('kolorist');
-
-const updateFiles = (directory, files) => {
-  files.remove.forEach((file) => {
-    fs.rmSync(path.resolve(directory, file), {
-      recursive: true,
-      force: true,
-    });
-  });
-
-  Object.entries(files.write).map(([key, value]) =>
-    fs.writeFileSync(path.resolve(directory, key), value, { encoding: 'utf-8' })
-  );
-};
 
 const templates = [
   {
@@ -91,6 +77,32 @@ const templates = [
       },
     ],
   },
+  {
+    framwork: 'Template build package',
+    color: magenta,
+    variants: [
+      {
+        name: 'Rollup, Reactjs, Typescript',
+        color: red,
+        githubRepo: 'https://github.com/hunghg255/rollup-package-react-template',
+      },
+      {
+        name: 'Microbundle, Reactjs, Typescript',
+        color: yellow,
+        githubRepo: 'https://github.com/hunghg255/microbundle-package-react-template',
+      },
+      {
+        name: 'Microbundle, Typescript',
+        color: cyan,
+        githubRepo: 'https://github.com/hunghg255/microbundle-package-template',
+      },
+      {
+        name: 'Tsup, typescript',
+        color: green,
+        githubRepo: 'https://github.com/hunghg255/npm-package-template',
+      },
+    ],
+  }
 ];
 
 module.exports = templates;
