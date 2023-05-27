@@ -1,5 +1,11 @@
 # create-template-fe
 
+## 2.0.0
+
+### Major Changes
+
+- 194685a: convert js to ts
+
 ## 1.1.6
 
 ### Patch Changes
