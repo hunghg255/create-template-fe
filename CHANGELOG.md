@@ -1,5 +1,11 @@
 # create-template-fe
 
+## 2.0.1
+
+### Patch Changes
+
+- 4afcc55: update
+
 ## 2.0.0
 
 ### Major Changes
