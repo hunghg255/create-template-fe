@@ -1,5 +1,11 @@
 # create-template-fe
 
+## 1.1.6
+
+### Patch Changes
+
+- a339a7d: update template build package
+
 ## 1.1.5
 
 ### Patch Changes
