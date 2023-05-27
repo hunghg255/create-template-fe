@@ -4,9 +4,16 @@
   "description": "[![Version](https://img.shields.io/npm/v/vity?style=flat&color=success)](https://www.npmjs.com/package/fe-cli)",
   "main": "./src/index.js",
   "scripts": {
-    "start": "node src",
-    "release": "changeset publish"
+    "start": "node ./bin/ctf.mjs",
+    "release": "changeset publish",
+    "build": "unbuild",
+    "stub": "unbuild --stub"
   },
+  "files": [
+    "bin",
+    "dist",
+    "LICENSE"
+  ],
   "keywords": [
     "frontend template",
     "frontend cli"
@@ -14,7 +21,7 @@
   "author": "hunghg",
   "license": "ISC",
   "bin": {
-    "create-template-fe": "src/index.js"
+    "create-template-fe": "./bin/ctf.mjs"
   },
   "repository": {
     "type": "git",
@@ -24,13 +31,27 @@
     "degit": "^2.8.4",
     "kolorist": "^1.7.0",
     "lodash.kebabcase": "^4.1.1",
-    "prompts": "^2.4.2"
+    "prompts": "^2.4.2",
+    "terser": "^5.17.1",
+    "typescript": "^5.0.4",
+    "unbuild": "^1.2.1"
   },
   "bugs": {
     "url": "https://github.com/hunghg255/create-template-fe/issues"
   },
   "homepage": "https://github.com/hunghg255/create-template-fe#readme",
   "devDependencies": {
-    "@changesets/cli": "^2.26.0"
+    "@changesets/cli": "^2.26.0",
+    "@types/degit": "^2.8.3",
+    "@types/lodash.kebabcase": "^4.1.7",
+    "@types/node": "^20.2.5",
+    "@types/prompts": "^2.4.4",
+    "tslib": "^2.5.2"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/cli.d.ts",
+      "import": "./dist/cli.mjs"
+    }
   }
 }

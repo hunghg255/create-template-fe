@@ -1,13 +1,11 @@
-#! /usr/bin/env node
+import path from 'node:path';
+import fs from 'node:fs';
+import degit from 'degit';
+import kebabCase from 'lodash.kebabcase';
+import { templates } from './templates';
+import prompts from 'prompts';
 
-const path = require('path');
-const fs = require('fs');
-const degit = require('degit');
-const kebabCase = require('lodash.kebabcase');
-const templates = require('./templates');
-const prompts = require('prompts');
-
-(async () => {
+export const startCli = async () => {
   const name = (
     await prompts({
       type: 'text',
@@ -48,17 +46,17 @@ const prompts = require('prompts');
     })
   ).value;
 
-  const frameworkSelected =
+  const frameworkSelected: any =
     templates.find((it) => it.framwork === templateLabel) || {};
 
-  if (!frameworkSelected.variants) return;
+  if (!frameworkSelected?.variants) return;
 
   const githubRepo = (
     await prompts({
       type: 'select',
       name: 'value',
       message: 'Select a variant',
-      choices: frameworkSelected.variants.map((item) => ({
+      choices: frameworkSelected?.variants?.map((item: any) => ({
         title: item.color(item.name),
         value: item.githubRepo,
       })),
@@ -91,4 +89,4 @@ const prompts = require('prompts');
   }
 
   console.log(`\n🎉 Successfully created your project!\n`);
-})();
+};

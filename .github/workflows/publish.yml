@@ -1,5 +1,9 @@
 name: Publish
 on:
+  workflow_run:
+    workflows: ["CI"]
+    types:
+      - completed
   push:
     branches:
       - 'master'
@@ -13,7 +17,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
       - run: npm install
       - name: Create Release Pull Request or Publish
         id: changesets

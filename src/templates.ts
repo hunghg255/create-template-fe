@@ -1,6 +1,4 @@
-const fs = require('fs');
-const path = require('path');
-const {
+import {
   blue,
   cyan,
   green,
@@ -9,9 +7,9 @@ const {
   magenta,
   red,
   yellow,
-} = require('kolorist');
+} from 'kolorist';
 
-const templates = [
+export const templates = [
   {
     framwork: 'Vanillajs',
     color: yellow,
@@ -104,5 +102,3 @@ const templates = [
     ],
   }
 ];
-
-module.exports = templates;
