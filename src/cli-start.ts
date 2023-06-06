@@ -4,6 +4,10 @@ import degit from 'degit';
 import kebabCase from 'lodash.kebabcase';
 import { templates } from './templates';
 import prompts from 'prompts';
+import {
+  green,
+  yellow,
+} from 'kolorist';
 
 export const startCli = async () => {
   const name = (
@@ -18,7 +22,6 @@ export const startCli = async () => {
   const directory = path.resolve(process.cwd(), name);
 
   if (fs.existsSync(directory) && fs.readdirSync(directory).length > 0) {
-    console.log(`⚙️ ${directory}`);
     const { willRemoveFiles } = await prompts({
       type: 'confirm',
       name: 'willRemoveFiles',
@@ -88,5 +91,10 @@ export const startCli = async () => {
     );
   }
 
-  console.log(`\n🎉 Successfully created your project!\n`);
+  console.log(green(`\n🎉 Scaffolding project in ${directory}`));
+  console.log(green('🎉 Done. Now run:\n'));
+  console.log(yellow(`cd ${name}`));
+  console.log(yellow('npm install'));
+  console.log(yellow('npm run dev'));
+  console.log('');
 };
