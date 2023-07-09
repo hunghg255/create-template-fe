@@ -1,5 +1,11 @@
 # create-template-fe
 
+## 2.1.0
+
+### Minor Changes
+
+- ec979e6: update new prompt
+
 ## 2.0.2
 
 ### Patch Changes
