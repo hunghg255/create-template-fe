@@ -102,3 +102,18 @@ export const templates = [
     ],
   }
 ];
+
+export const packageManagers = [
+  {
+    name: 'npm',
+    color: red,
+  },
+  {
+    name: 'yarn',
+    color: cyan,
+  },
+  {
+    name: 'pnpm',
+    color: yellow,
+  }
+]

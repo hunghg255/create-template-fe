@@ -2,71 +2,110 @@ import path from 'node:path';
 import fs from 'node:fs';
 import degit from 'degit';
 import kebabCase from 'lodash.kebabcase';
-import { templates } from './templates';
-import prompts from 'prompts';
+import { packageManagers, templates } from './templates';
+import { green, bgBlue, underline, cyan, yellow } from 'kolorist';
 import {
-  green,
-  yellow,
-} from 'kolorist';
+  intro,
+  outro,
+  confirm,
+  select,
+  spinner,
+  isCancel,
+  cancel,
+  text,
+  note,
+} from '@clack/prompts';
+import { execSync } from 'child_process';
 
 export const startCli = async () => {
-  const name = (
-    await prompts({
-      type: 'text',
-      message: "What's the name of your app?",
-      initial: 'my-app',
-      name: 'name',
-    })
-  ).name;
+  intro(bgBlue(' create-my-app '));
 
-  const directory = path.resolve(process.cwd(), name);
+  const name = await text({
+    message: "What's the name of your app?",
+    placeholder: 'my-app',
+    defaultValue: 'my-app',
+  });
+
+  if (isCancel(name)) {
+    cancel('Operation cancelled');
+    return process.exit(0);
+  }
+
+  const directory = path.resolve(process.cwd(), name as string);
 
   if (fs.existsSync(directory) && fs.readdirSync(directory).length > 0) {
-    const { willRemoveFiles } = await prompts({
-      type: 'confirm',
-      name: 'willRemoveFiles',
+    const isConfirmed = await confirm({
       message: 'Directory is not empty. Remove existing files and continue?',
-      initial: true,
+      initialValue: true,
     });
 
-    if (willRemoveFiles) {
+    if (isConfirmed) {
       fs.rmSync(directory, { recursive: true, force: true });
       fs.mkdirSync(directory);
     } else {
-      process.exit(1);
+      cancel('Operation cancelled');
+      process.exit(0);
     }
   }
 
-  const templateLabel = (
-    await prompts({
-      type: 'select',
-      name: 'value',
-      message: 'Select a framework',
-      choices: templates.map((it) => ({
-        title: it.color(it.framwork),
-        value: it.framwork,
-      })),
-    })
-  ).value;
+  const templateLabel = await select({
+    message: 'Select a framework',
+    options: templates.map((it) => ({
+      label: it.color(it.framwork),
+      value: it.framwork,
+    })),
+  });
+
+  if (isCancel(templateLabel)) {
+    cancel('Operation cancelled');
+    return process.exit(0);
+  }
 
   const frameworkSelected: any =
     templates.find((it) => it.framwork === templateLabel) || {};
 
-  if (!frameworkSelected?.variants) return;
+  const githubRepo = (await select({
+    message: 'Select a variant',
+    options: frameworkSelected?.variants.map((item: any) => ({
+      label: item.color(item.name),
+      value: item.githubRepo,
+    })),
+  })) as string;
 
-  const githubRepo = (
-    await prompts({
-      type: 'select',
-      name: 'value',
-      message: 'Select a variant',
-      choices: frameworkSelected?.variants?.map((item: any) => ({
-        title: item.color(item.name),
-        value: item.githubRepo,
+
+  if (isCancel(githubRepo)) {
+    cancel('Operation cancelled');
+    return process.exit(0);
+  }
+
+  const isInstallDeps = await confirm({
+    message: 'Do you want to install dependencies?',
+    initialValue: false,
+  });
+
+  if (isCancel(isInstallDeps)) {
+    cancel('Operation cancelled');
+    return process.exit(0);
+  }
+
+  let packageManager = 'npm';
+  if (isInstallDeps) {
+    packageManager = (await select({
+      message: 'Select package manager',
+      options: packageManagers.map((item: any) => ({
+        label: item.color(item.name),
+        value: item.name,
       })),
-    })
-  ).value;
+    })) as string;
 
-  if (!githubRepo) return;
+    if (isCancel(packageManager)) {
+      cancel('Operation cancelled');
+      return process.exit(0);
+    }
+  }
+
+  const s = spinner();
+  s.start(`Installing via ${packageManager}`);
 
   const emitter = degit(githubRepo, {
     cache: false,
@@ -89,12 +128,24 @@ export const startCli = async () => {
       JSON.stringify(packageJSON, null, 2),
       { encoding: 'utf-8' }
     );
+
+    if (isInstallDeps) {
+      execSync(`${packageManager} install`, { cwd: directory, stdio: 'inherit' });
+    }
   }
 
-  console.log(green(`\n🎉 Scaffolding project in ${directory}`));
-  console.log(green('🎉 Done. Now run:\n'));
-  console.log(yellow(`cd ${name}`));
-  console.log(yellow('npm install'));
-  console.log(yellow('npm run dev'));
-  console.log('');
+  s.stop(green(`🎉 Scaffolding project in ${underline(directory)}`));
+
+  note(
+    `${yellow(`cd ${name}`)}\n${isInstallDeps ? '' : yellow('npm install')}\n${yellow(
+      'npm run dev'
+    )}`,
+    green('🎉 Done. Now run:')
+  );
+
+  outro(
+    `Problems? ${underline(
+      cyan('https://github.com/hunghg255/create-template-fe/issues')
+    )}`
+  );
 };

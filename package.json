@@ -29,10 +29,11 @@
     "url": "git+https://github.com/hunghg255/create-template-fe.git"
   },
   "dependencies": {
+    "@clack/prompts": "^0.6.3",
+    "child_process": "^1.0.2",
     "degit": "^2.8.4",
     "kolorist": "^1.7.0",
     "lodash.kebabcase": "^4.1.1",
-    "prompts": "^2.4.2",
     "terser": "^5.17.1",
     "typescript": "^5.0.4",
     "unbuild": "^1.2.1"
