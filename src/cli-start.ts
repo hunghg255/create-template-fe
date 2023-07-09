@@ -72,40 +72,43 @@ export const startCli = async () => {
     })),
   })) as string;
 
-
   if (isCancel(githubRepo)) {
     cancel('Operation cancelled');
     return process.exit(0);
   }
 
-  const isInstallDeps = await confirm({
-    message: 'Do you want to install dependencies?',
-    initialValue: false,
-  });
-
-  if (isCancel(isInstallDeps)) {
-    cancel('Operation cancelled');
-    return process.exit(0);
-  }
-
+  let isInstallDeps = false;
   let packageManager = 'npm';
-  if (isInstallDeps) {
-    packageManager = (await select({
-      message: 'Select package manager',
-      options: packageManagers.map((item: any) => ({
-        label: item.color(item.name),
-        value: item.name,
-      })),
-    })) as string;
 
-    if (isCancel(packageManager)) {
+  if (!githubRepo.includes('html-css-js')) {
+    isInstallDeps = (await confirm({
+      message: 'Do you want to install dependencies?',
+      initialValue: false,
+    })) as boolean;
+
+    if (isCancel(isInstallDeps)) {
       cancel('Operation cancelled');
       return process.exit(0);
+    }
+
+    if (isInstallDeps) {
+      packageManager = (await select({
+        message: 'Select package manager',
+        options: packageManagers.map((item: any) => ({
+          label: item.color(item.name),
+          value: item.name,
+        })),
+      })) as string;
+
+      if (isCancel(packageManager)) {
+        cancel('Operation cancelled');
+        return process.exit(0);
+      }
     }
   }
 
   const s = spinner();
-  s.start(`Installing via ${packageManager}`);
+  s.start(`Installing via ${isInstallDeps ? packageManager : 'degit'}`);
 
   const emitter = degit(githubRepo, {
     cache: false,
@@ -130,16 +133,19 @@ export const startCli = async () => {
     );
 
     if (isInstallDeps) {
-      execSync(`${packageManager} install`, { cwd: directory, stdio: 'inherit' });
+      execSync(`${packageManager} install`, {
+        cwd: directory,
+        stdio: 'inherit',
+      });
     }
   }
 
   s.stop(green(`🎉 Scaffolding project in ${underline(directory)}`));
 
   note(
-    `${yellow(`cd ${name}`)}\n${isInstallDeps ? '' : yellow('npm install')}\n${yellow(
-      'npm run dev'
-    )}`,
+    `${yellow(`cd ${name}`)}\n${
+      isInstallDeps ? '' : yellow('npm install')
+    }\n${yellow('npm run dev')}`,
     green('🎉 Done. Now run:')
   );
 
@@ -148,4 +154,6 @@ export const startCli = async () => {
       cyan('https://github.com/hunghg255/create-template-fe/issues')
     )}`
   );
+
+  return process.exit(0);
 };
