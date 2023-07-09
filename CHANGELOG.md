@@ -1,5 +1,11 @@
 # create-template-fe
 
+## 2.0.2
+
+### Patch Changes
+
+- 7088db8: update cli
+
 ## 2.0.1
 
 ### Patch Changes
