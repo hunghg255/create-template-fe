@@ -76,6 +76,17 @@ export const templates = [
     ],
   },
   {
+    framwork: 'Svelte',
+    color: red,
+    variants: [
+      {
+        name: 'Sveltekit, Tailwindcss, Typescript',
+        color: green,
+        githubRepo: 'https://github.com/hunghg255/svelte-kit-tailwindcss-template',
+      },
+    ],
+  },
+  {
     framwork: 'Template build package',
     color: magenta,
     variants: [
