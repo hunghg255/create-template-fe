@@ -1,5 +1,11 @@
 # create-template-fe
 
+## 2.1.1
+
+### Patch Changes
+
+- 418f4f6: add sveltekit template
+
 ## 2.1.0
 
 ### Minor Changes
