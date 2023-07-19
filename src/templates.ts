@@ -2,6 +2,7 @@ import {
   blue,
   cyan,
   green,
+  lightBlue,
   lightGreen,
   lightRed,
   magenta,
@@ -109,6 +110,11 @@ export const templates = [
         name: 'Tsup, typescript',
         color: green,
         githubRepo: 'https://github.com/hunghg255/npm-package-template',
+      },
+      {
+        name: 'unbuild, typescript',
+        color: lightBlue,
+        githubRepo: 'https://github.com/hunghg255/unbuild-package-template.git',
       },
     ],
   }
