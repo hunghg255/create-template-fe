@@ -1,5 +1,11 @@
 # create-template-fe
 
+## 2.1.2
+
+### Patch Changes
+
+- 942b400: add unbuild template
+
 ## 2.1.1
 
 ### Patch Changes
