@@ -117,6 +117,17 @@ export const templates = [
         githubRepo: 'https://github.com/hunghg255/unbuild-package-template.git',
       },
     ],
+  },
+  {
+    framwork: 'Template create a blogs',
+    color: cyan,
+    variants: [
+      {
+        name: 'Docusaurus, Typescript, Embeded Expo, Stackblitz',
+        color: green,
+        githubRepo: 'https://github.com/hunghg255/template-docusaurus.git',
+      },
+    ],
   }
 ];
 
