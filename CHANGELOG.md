@@ -1,5 +1,11 @@
 # create-template-fe
 
+## 2.1.3
+
+### Patch Changes
+
+- 82d9062: add template docusaurus
+
 ## 2.1.2
 
 ### Patch Changes
