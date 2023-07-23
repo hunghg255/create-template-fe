@@ -9,6 +9,40 @@
 npx create-template-fe@latest
 ```
 
+## Templates
+
+```md
+- Vanillajs
+  |- HTML, CSS, JS
+  |- HTML, CSS, JS, Webpack
+
+- Vitejs
+  |- Vitejs, React18, Typescript
+  |- Vitejs, React18, Typescript, SWC
+  |- Vitejs, Antd, Recoil, i18n, Typescript
+
+- Nextjs
+  |- Next12, Antd, Recoil, i18n, Typescript
+  |- Next13, Antd, Jotai, i18n, Typescript (Page Router)
+  |- Next13, Tailwindcss, Jotai, i18n, Typescript (Page Router)
+  |- Next13 (App Router)
+
+- Svelte
+  |- Sveltekit, Tailwindcss, Typescript
+
+- Template build package
+  |- Rollup, Reactjs, Typescript
+  |- Microbundle, Reactjs, Typescript
+  |- Microbundle, Typescript
+  |- Tsup, typescript
+  |- unbuild, typescript
+
+- Template create a blogs
+  |- Docusaurus, Typescript, Embeded Expo (React native), Stackblitz
+```
+
+
 ## Demo
 
 ![Token manager](./assets/demo.png)
+
