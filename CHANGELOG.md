@@ -1,5 +1,11 @@
 # create-template-fe
 
+## 2.1.4
+
+### Patch Changes
+
+- 20039fd: update package
+
 ## 2.1.3
 
 ### Patch Changes
