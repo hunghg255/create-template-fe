@@ -10,11 +10,11 @@ import {
   confirm,
   select,
   spinner,
-  isCancel,
   cancel,
   text,
   note,
-} from '@clack/prompts';
+  isCancel,
+} from 'unprompts';
 import { execSync } from 'child_process';
 
 export const startCli = async () => {
