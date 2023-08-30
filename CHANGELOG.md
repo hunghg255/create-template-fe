@@ -1,5 +1,11 @@
 # create-template-fe
 
+## 2.1.5
+
+### Patch Changes
+
+- 05102ee: update style
+
 ## 2.1.4
 
 ### Patch Changes
