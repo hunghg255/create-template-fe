@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import degit from 'degit';
 import kebabCase from 'lodash.kebabcase';
 import { packageManagers, templates } from './templates';
-import { green, bgBlue, underline, cyan, yellow } from 'kolorist';
+import { green, underline, cyan, yellow, bold } from 'kolorist';
 import {
   intro,
   outro,
@@ -16,9 +16,10 @@ import {
   isCancel,
 } from 'unprompts';
 import { execSync } from 'child_process';
+import { rainbow } from 'ungradient';
 
 export const startCli = async () => {
-  intro(bgBlue(' create-my-app '));
+  intro(bold(rainbow('Create Template')));
 
   const name = await text({
     message: "What's the name of your app?",

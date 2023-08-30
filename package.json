@@ -36,6 +36,7 @@
     "terser": "^5.17.1",
     "typescript": "^5.0.4",
     "unbuild": "^1.2.1",
+    "ungradient": "^0.0.1",
     "unprompts": "^1.0.8"
   },
   "bugs": {
