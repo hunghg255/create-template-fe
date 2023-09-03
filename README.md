@@ -30,15 +30,18 @@ npx create-template-fe@latest
 - Svelte
   |- Sveltekit, Tailwindcss, Typescript
 
-- Template build package
+- Template create a package
   |- Rollup, Reactjs, Typescript
   |- Microbundle, Reactjs, Typescript
   |- Microbundle, Typescript
   |- Tsup, typescript
   |- unbuild, typescript
 
-- Template create a blogs
+- Template create a blog
   |- Docusaurus, Typescript, Embeded Expo (React native), Stackblitz
+
+- Template create a github action
+  |- Actions Core, Typescript
 ```
 
 

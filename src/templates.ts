@@ -8,6 +8,7 @@ import {
   magenta,
   red,
   yellow,
+  lightYellow
 } from 'kolorist';
 
 export const templates = [
@@ -88,7 +89,7 @@ export const templates = [
     ],
   },
   {
-    framwork: 'Template build package',
+    framwork: 'Template create a package',
     color: magenta,
     variants: [
       {
@@ -119,13 +120,24 @@ export const templates = [
     ],
   },
   {
-    framwork: 'Template create a blogs',
+    framwork: 'Template create a blog',
     color: cyan,
     variants: [
       {
         name: 'Docusaurus, Typescript, Embeded Expo, Stackblitz',
         color: green,
         githubRepo: 'https://github.com/hunghg255/template-docusaurus.git',
+      },
+    ],
+  },
+  {
+    framwork: 'Template create a github action',
+    color: lightYellow,
+    variants: [
+      {
+        name: 'Actions Core, Typescript',
+        color: green,
+        githubRepo: 'https://github.com/hunghg255/github-actions-template.git',
       },
     ],
   }
