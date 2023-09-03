@@ -1,5 +1,11 @@
 # create-template-fe
 
+## 2.1.6
+
+### Patch Changes
+
+- f5f2bda: update template github actions
+
 ## 2.1.5
 
 ### Patch Changes
