@@ -89,7 +89,7 @@ export const templates = [
     ],
   },
   {
-    framwork: 'Template create a package',
+    framwork: 'Template create a package react, svlete, vanillajs,...',
     color: magenta,
     variants: [
       {
@@ -116,6 +116,16 @@ export const templates = [
         name: 'unbuild, typescript',
         color: lightBlue,
         githubRepo: 'https://github.com/hunghg255/unbuild-package-template.git',
+      },
+      {
+        name: 'Rollup, Svelte, Typescript',
+        color: lightGreen,
+        githubRepo: 'https://github.com/hunghg255/rollup-svelte-package-template.git',
+      },
+      {
+        name: 'Tsup, Svelte, Typescript',
+        color: lightYellow,
+        githubRepo: 'https://github.com/hunghg255/tsup-svelte-package-template.git',
       },
     ],
   },
