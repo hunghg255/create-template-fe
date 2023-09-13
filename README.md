@@ -9,6 +9,9 @@
 # npm
 npx create-template-fe@latest
 
+# npm
+pnpx create-template-fe@latest
+
 # bun
 bunx create-template-fe@latest
 ```
