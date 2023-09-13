@@ -5,10 +5,11 @@
   "main": "./src/index.js",
   "scripts": {
     "start": "node ./bin/ctf.mjs",
-    "release": "changeset publish",
     "build": "unbuild",
     "stub": "unbuild --stub",
-    "lint": "tsc"
+    "lint": "tsc",
+    "changelog": "npx changeloggithub@latest --all true && git add CHANGELOG.md && git commit -m \"chore: update changelog\"",
+    "release": "bumpp -r && npm run changelog && npm run build && npm publish"
   },
   "files": [
     "bin",
@@ -49,6 +50,7 @@
     "@types/lodash.kebabcase": "^4.1.7",
     "@types/node": "^20.2.5",
     "@types/prompts": "^2.4.4",
+    "bumpp": "^9.2.0",
     "tslib": "^2.5.2"
   },
   "exports": {
