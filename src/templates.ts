@@ -8,7 +8,8 @@ import {
   magenta,
   red,
   yellow,
-  lightYellow
+  lightYellow,
+  lightGray
 } from 'kolorist';
 
 export const templates = [
@@ -165,5 +166,9 @@ export const packageManagers = [
   {
     name: 'pnpm',
     color: yellow,
+  },
+  {
+    name: 'bun',
+    color: lightGray,
   }
 ]

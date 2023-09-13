@@ -6,7 +6,11 @@
 ## Get started
 
 ```bash
+# npm
 npx create-template-fe@latest
+
+# bun
+bunx create-template-fe@latest
 ```
 
 ## Templates
