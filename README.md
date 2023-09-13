@@ -43,6 +43,8 @@ bunx create-template-fe@latest
   |- Microbundle, Typescript
   |- Tsup, typescript
   |- unbuild, typescript
+  |- Rollup, Svelte, Typescript
+  |- Tsup, Svelte, Typescript
 
 - Template create a blog
   |- Docusaurus, Typescript, Embeded Expo (React native), Stackblitz
