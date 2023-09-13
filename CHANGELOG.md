@@ -1,3 +1,8 @@
+## [v2.1.8](https://github.com/hunghg255/create-template-fe/compare/v2.1.7...v2.1.8) - 2023-09-13
+### &nbsp;&nbsp;&nbsp;🏡 Chores
+
+- Update changelog &nbsp;-&nbsp; by **hunghg255** [<samp>(72766)</samp>](https://github.com/hunghg255/create-template-fe/commit/7276615)
+- Release v2.1.8 &nbsp;-&nbsp; by **hunghg255** [<samp>(c4a1f)</samp>](https://github.com/hunghg255/create-template-fe/commit/c4a1fa4)
 ## [v2.1.7](https://github.com/hunghg255/create-template-fe/compare/v2.1.6...v2.1.7) - 2023-09-13
 ### &nbsp;&nbsp;&nbsp;🏡 Chores
 
