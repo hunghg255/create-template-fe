@@ -1,3 +1,20 @@
+## [v2.1.7](https://github.com/hunghg255/create-template-fe/compare/v2.1.6...v2.1.7) - 2023-09-13
+### &nbsp;&nbsp;&nbsp;🏡 Chores
+
+- Update template &nbsp;-&nbsp; by **hunghg255** [<samp>(e7657)</samp>](https://github.com/hunghg255/create-template-fe/commit/e765763)
+- Update changelog &nbsp;-&nbsp; by **hunghg255** [<samp>(b5043)</samp>](https://github.com/hunghg255/create-template-fe/commit/b5043de)
+- Update cli bun &nbsp;-&nbsp; by **hunghg255** [<samp>(987d3)</samp>](https://github.com/hunghg255/create-template-fe/commit/987d34a)
+- Update readme &nbsp;-&nbsp; by **hunghg255** [<samp>(bc539)</samp>](https://github.com/hunghg255/create-template-fe/commit/bc5393c)
+- Update changelog &nbsp;-&nbsp; by **hunghg255** [<samp>(eaf05)</samp>](https://github.com/hunghg255/create-template-fe/commit/eaf0594)
+- Update readme &nbsp;-&nbsp; by **hunghg255** [<samp>(8718f)</samp>](https://github.com/hunghg255/create-template-fe/commit/8718f03)
+- Update changelog &nbsp;-&nbsp; by **hunghg255** [<samp>(a939e)</samp>](https://github.com/hunghg255/create-template-fe/commit/a939e3d)
+- Update changelog &nbsp;-&nbsp; by **hunghg255** [<samp>(0d6db)</samp>](https://github.com/hunghg255/create-template-fe/commit/0d6db75)
+- Release v2.1.7 &nbsp;-&nbsp; by **hunghg255** [<samp>(24c1d)</samp>](https://github.com/hunghg255/create-template-fe/commit/24c1d54)
+
+### &nbsp;&nbsp;&nbsp;🧹 Other
+
+- Version Packages &nbsp;-&nbsp; by **github-actions[bot]** [<samp>(48a92)</samp>](https://github.com/hunghg255/create-template-fe/commit/48a926c)
+- Merge pull request #20 from hunghg255/changeset-release/master &nbsp;-&nbsp; by **Hung Hoang** in https://github.com/hunghg255/create-template-fe/issues/20 [<samp>(ec296)</samp>](https://github.com/hunghg255/create-template-fe/commit/ec296d8)
 ## [v2.1.6](https://github.com/hunghg255/create-template-fe/compare/v2.1.5...v2.1.6) - 2023-09-03
 ### &nbsp;&nbsp;&nbsp;🏡 Chores
 
