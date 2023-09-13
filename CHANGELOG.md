@@ -1,5 +1,13 @@
 # create-template-fe
 
+## 2.1.7
+
+### Patch Changes
+
+- b5043de: update template
+- bc5393c: update cli bun
+- eaf0594: update readme
+
 ## 2.1.6
 
 ### Patch Changes
