@@ -6,13 +6,13 @@
 ## Get started
 
 ```bash
-# npm
+# npx
 npx create-template-fe@latest
 
-# npm
+# pnpx
 pnpx create-template-fe@latest
 
-# bun
+# bunx
 bunx create-template-fe@latest
 ```
 
