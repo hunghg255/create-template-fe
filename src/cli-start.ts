@@ -134,10 +134,18 @@ export const startCli = async () => {
     );
 
     if (isInstallDeps) {
-      execSync(`${packageManager} install`, {
-        cwd: directory,
-        stdio: 'inherit',
-      });
+      try {
+        execSync(`${packageManager} install`, {
+          cwd: directory,
+          stdio: 'inherit',
+        });
+      } catch (err: any) {
+        err.stdout;
+        err.stderr;
+        err.pid;
+        err.signal;
+        err.status;
+      }
     }
   }
 

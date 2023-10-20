@@ -8,7 +8,7 @@
     "build": "unbuild",
     "stub": "unbuild --stub",
     "lint": "tsc",
-    "changelog": "npx changeloggithub@latest --all true && git add . && git commit -m \"chore: update\"",
+    "changelog": "npx changeloggithub@latest --all true && git add . && git commit -m \"chore: update\" && git push",
     "release": "npm run build && bumpp -r && npm run changelog && npm publish"
   },
   "files": [
@@ -30,8 +30,8 @@
     "url": "git+https://github.com/hunghg255/create-template-fe.git"
   },
   "dependencies": {
-    "child_process": "^1.0.2",
     "degit": "^2.8.4",
+    "execa": "^8.0.1",
     "kolorist": "^1.7.0",
     "lodash.kebabcase": "^4.1.1",
     "terser": "^5.17.1",
