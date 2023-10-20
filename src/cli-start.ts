@@ -15,8 +15,8 @@ import {
   note,
   isCancel,
 } from 'unprompts';
-import { execSync } from 'child_process';
 import { rainbow } from 'ungradient';
+import spawn from 'cross-spawn';
 
 export const startCli = async () => {
   intro(bold(rainbow('Create Template')));
@@ -135,7 +135,7 @@ export const startCli = async () => {
 
     if (isInstallDeps) {
       try {
-        execSync(`${packageManager} install`, {
+        spawn.sync(packageManager,['install'], {
           cwd: directory,
           stdio: 'inherit',
         });

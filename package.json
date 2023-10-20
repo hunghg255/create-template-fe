@@ -30,6 +30,7 @@
     "url": "git+https://github.com/hunghg255/create-template-fe.git"
   },
   "dependencies": {
+    "cross-spawn": "^7.0.3",
     "degit": "^2.8.4",
     "execa": "^8.0.1",
     "kolorist": "^1.7.0",
@@ -46,6 +47,7 @@
   "homepage": "https://github.com/hunghg255/create-template-fe#readme",
   "devDependencies": {
     "@changesets/cli": "^2.26.0",
+    "@types/cross-spawn": "^6.0.4",
     "@types/degit": "^2.8.3",
     "@types/lodash.kebabcase": "^4.1.7",
     "@types/node": "^20.2.5",
