@@ -1,3 +1,9 @@
+## [v2.1.11](https://github.com/hunghg255/create-template-fe/compare/v2.1.10...v2.1.11) - 2023-10-20
+### &nbsp;&nbsp;&nbsp;🏡 Chores
+
+- Update &nbsp;-&nbsp; by **hunghg255** [<samp>(36250)</samp>](https://github.com/hunghg255/create-template-fe/commit/36250a4)
+- Update cross platform &nbsp;-&nbsp; by **hunghg255** [<samp>(c958c)</samp>](https://github.com/hunghg255/create-template-fe/commit/c958c0d)
+- Release v2.1.11 &nbsp;-&nbsp; by **hunghg255** [<samp>(63f80)</samp>](https://github.com/hunghg255/create-template-fe/commit/63f8000)
 ## [v2.1.10](https://github.com/hunghg255/create-template-fe/compare/v2.1.9...v2.1.10) - 2023-10-20
 ### &nbsp;&nbsp;&nbsp;🏡 Chores
 
