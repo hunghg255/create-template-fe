@@ -1,3 +1,9 @@
+## [v2.1.13](https://github.com/hunghg255/create-template-fe/compare/v2.1.12...v2.1.13) - 2023-11-08
+### &nbsp;&nbsp;&nbsp;🏡 Chores
+
+- Update &nbsp;-&nbsp; by **hunghg255** [<samp>(108b1)</samp>](https://github.com/hunghg255/create-template-fe/commit/108b13f)
+- Update rsbuild template &nbsp;-&nbsp; by **hunghg255** [<samp>(f1745)</samp>](https://github.com/hunghg255/create-template-fe/commit/f1745f5)
+- Release v2.1.13 &nbsp;-&nbsp; by **hunghg255** [<samp>(0de09)</samp>](https://github.com/hunghg255/create-template-fe/commit/0de09fe)
 ## [v2.1.12](https://github.com/hunghg255/create-template-fe/compare/v2.1.11...v2.1.12) - 2023-10-27
 ### &nbsp;&nbsp;&nbsp;🏡 Chores
 
