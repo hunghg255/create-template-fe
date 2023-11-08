@@ -9,7 +9,7 @@ import {
   red,
   yellow,
   lightYellow,
-  lightGray
+  lightGray,
 } from 'kolorist';
 
 export const templates = [
@@ -46,10 +46,21 @@ export const templates = [
         githubRepo: 'https://github.com/hunghg255/vite-react-swc-init.git',
       },
       {
-        name: 'Vitejs, Antd, Recoil, i18n, Typescript',
+        name: 'Vitejs, Antd, Jotail, i18n, Typescript',
         color: yellow,
         githubRepo: 'https://github.com/hunghg255/vite-react-antd.git',
       },
+    ],
+  },
+  {
+    framwork: 'Rsbuild',
+    color: magenta,
+    variants: [
+      {
+        name: 'Rsbuild, Antd, Jotail, i18n, Typescript',
+        color: green,
+        githubRepo: 'https://github.com/hunghg255/rsbuild-react-antd.git',
+      }
     ],
   },
   {
@@ -57,7 +68,7 @@ export const templates = [
     color: lightGreen,
     variants: [
       {
-        name: 'Next12, Antd, Recoil, i18n, Typescript',
+        name: 'Next12, Antd, Jotail, i18n, Typescript',
         color: red,
         githubRepo: 'https://github.com/hunghg255/next12-antd-recoil.git',
       },

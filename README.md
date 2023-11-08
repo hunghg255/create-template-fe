@@ -28,6 +28,9 @@ bunx create-template-fe@latest
   |- Vitejs, React18, Typescript, SWC
   |- Vitejs, Antd, Recoil, i18n, Typescript
 
+- Rsbuild
+  |- Rsbuild, Antd, Recoil, i18n, Typescript
+
 - Nextjs
   |- Next12, Antd, Recoil, i18n, Typescript
   |- Next13, Antd, Jotai, i18n, Typescript (Page Router)
