@@ -1,6 +1,6 @@
 {
   "name": "create-template-fe",
-  "version": "2.1.12",
+  "version": "2.1.13",
   "description": "[![Version](https://img.shields.io/npm/v/create-template-fe?style=flat&color=success)](https://www.npmjs.com/package/create-template-fe)",
   "main": "./src/index.js",
   "scripts": {
