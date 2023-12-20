@@ -1,8 +1,21 @@
 {
   "name": "create-template-fe",
-  "version": "2.1.13",
+  "version": "2.1.15",
   "description": "[![Version](https://img.shields.io/npm/v/create-template-fe?style=flat&color=success)](https://www.npmjs.com/package/create-template-fe)",
-  "main": "./src/index.js",
+  "main": "./dist/cli.cjs",
+  "module": "./dist/cli.mjs",
+  "types": "./dist/cli.d.ts",
+  "type": "module",
+  "exports": {
+    "import": {
+      "types": "./dist/cli.d.mts",
+      "default": "./dist/cli.mjs"
+    },
+    "require": {
+      "types": "./dist/cli.d.cts",
+      "default": "./dist/cli.cjs"
+    }
+  },
   "scripts": {
     "start": "node ./bin/ctf.mjs",
     "build": "unbuild",
@@ -36,8 +49,6 @@
     "kolorist": "^1.7.0",
     "lodash.kebabcase": "^4.1.1",
     "terser": "^5.17.1",
-    "typescript": "^5.0.4",
-    "unbuild": "^1.2.1",
     "ungradient": "^0.0.1",
     "unprompts": "^1.0.8"
   },
@@ -53,12 +64,8 @@
     "@types/node": "^20.2.5",
     "@types/prompts": "^2.4.4",
     "bumpp": "^9.2.0",
-    "tslib": "^2.5.2"
-  },
-  "exports": {
-    ".": {
-      "types": "./dist/cli.d.ts",
-      "import": "./dist/cli.mjs"
-    }
+    "tslib": "^2.5.2",
+    "typescript": "^5.3.3",
+    "unbuild": "^2.0.0"
   }
 }
