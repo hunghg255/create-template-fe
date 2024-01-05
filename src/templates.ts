@@ -106,8 +106,13 @@ export const templates = [
     variants: [
       {
         name: 'Rollup, Reactjs, Typescript',
-        color: red,
+        color: green,
         githubRepo: 'https://github.com/hunghg255/rollup-package-react-template',
+      },
+      {
+        name: 'Tsup, Reactjs, Typescript',
+        color: red,
+        githubRepo: 'https://github.com/hunghg255/tsup-react-typescript-template',
       },
       {
         name: 'Microbundle, Reactjs, Typescript',
