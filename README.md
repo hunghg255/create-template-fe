@@ -1,7 +1,19 @@
-# CLI generate frontend template
+<p align="center">
+<a href="https://www.npmjs.com/package/create-template-fe" target="_blank" rel="noopener noreferrer">
+<img src="https://api.iconify.design/codicon:terminal-cmd.svg?color=%23b3ff75" alt="logo" width='100'/></a>
+</p>
 
-[![npm version](https://badge.fury.io/js/create-template-fe.svg)](https://badge.fury.io/js/create-template-fe) [![npm](https://img.shields.io/npm/dt/create-template-fe.svg?logo=npm)](https://www.npmjs.com/package/create-template-fe) [![npm](https://img.shields.io/bundlephobia/minzip/create-template-fe)](https://www.npmjs.com/package/create-template-fe)
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors-)
+<p align="center">
+  A script to create a template for front-end projects.
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/create-template-fe" target="_blank" rel="noopener noreferrer"><img src="https://badge.fury.io/js/create-template-fe.svg" alt="NPM Version" /></a>
+  <a href="https://www.npmjs.com/package/create-template-fe" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/npm/dt/create-template-fe.svg?logo=npm" alt="NPM Downloads" /></a>
+  <a href="https://bundlephobia.com/result?p=create-template-fe" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/bundlephobia/minzip/create-template-fe" alt="Minizip" /></a>
+  <a href="https://github.com/hunghg255/create-template-fe/graphs/contributors" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/all_contributors-1-orange.svg" alt="Contributors" /></a>
+  <a href="https://github.com/hunghg255/create-template-fe/blob/main/LICENSE" target="_blank" rel="noopener noreferrer"><img src="https://badgen.net/github/license/hunghg255/create-template-fe" alt="License" /></a>
+</p>
 
 ## Get started
 
