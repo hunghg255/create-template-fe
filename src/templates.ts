@@ -147,13 +147,18 @@ export const templates = [
     ],
   },
   {
-    framwork: 'Template create a blog',
+    framwork: 'Template create a blog, docs',
     color: cyan,
     variants: [
       {
         name: 'Docusaurus, Typescript, Embeded Expo, Stackblitz',
         color: green,
         githubRepo: 'https://github.com/hunghg255/template-docusaurus.git',
+      },
+      {
+        name: 'Markdown, Typescript, Twoslash, Shiki',
+        color: blue,
+        githubRepo: 'https://github.com/hunghg255/tiny-docs-template.git',
       },
     ],
   },

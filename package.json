@@ -18,9 +18,10 @@
   },
   "scripts": {
     "start": "node ./bin/ctf.mjs",
+    "play": "esno src/cli.ts",
     "build": "unbuild",
     "stub": "unbuild --stub",
-    "lint": "tsc",
+    "lint": "npx oxlint .",
     "changelog": "npx changeloggithub@latest --all true && git add . && git commit -m \"chore: update\" && git push",
     "release": "npm run build && bumpp -r && npm run changelog && npm publish"
   },
@@ -64,6 +65,7 @@
     "@types/node": "^20.2.5",
     "@types/prompts": "^2.4.4",
     "bumpp": "^9.2.0",
+    "esno": "^4.0.0",
     "tslib": "^2.5.2",
     "typescript": "^5.3.3",
     "unbuild": "^2.0.0"
