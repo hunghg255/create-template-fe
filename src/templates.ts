@@ -144,6 +144,16 @@ export const templates = [
         color: lightYellow,
         githubRepo: 'https://github.com/hunghg255/tsup-svelte-package-template.git',
       },
+      {
+        name: 'bunchee, typescript',
+        color: cyan,
+        githubRepo: 'https://github.com/hunghg255/bunchee-package.git',
+      },
+      {
+        name: 'bunchee, reactjs, typescript',
+        color: blue,
+        githubRepo: 'https://github.com/hunghg255/bunchee-reactjs-package.git',
+      },
     ],
   },
   {
