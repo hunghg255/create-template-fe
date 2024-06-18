@@ -182,6 +182,17 @@ export const templates = [
         githubRepo: 'https://github.com/hunghg255/github-actions-template.git',
       },
     ],
+  },
+  {
+    framwork: 'Template create a CMS',
+    color: yellow,
+    variants: [
+      {
+        name: 'Vitejs, Antd, Tailwindcss, Jotai',
+        color: green,
+        githubRepo: 'https://github.com/hunghg255/cms-vite-antd.git',
+      },
+    ],
   }
 ];
 
