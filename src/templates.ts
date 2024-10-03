@@ -105,17 +105,17 @@ export const templates = [
     color: magenta,
     variants: [
       {
-        name: 'Rollup, Reactjs, Typescript',
+        name: 'Rollup, React, Typescript',
         color: green,
         githubRepo: 'https://github.com/hunghg255/rollup-package-react-template',
       },
       {
-        name: 'Tsup, Reactjs, Typescript',
+        name: 'Tsup, React, Typescript',
         color: red,
         githubRepo: 'https://github.com/hunghg255/tsup-react-typescript-template',
       },
       {
-        name: 'Microbundle, Reactjs, Typescript',
+        name: 'Microbundle, React, Typescript',
         color: yellow,
         githubRepo: 'https://github.com/hunghg255/microbundle-package-react-template',
       },
@@ -125,12 +125,12 @@ export const templates = [
         githubRepo: 'https://github.com/hunghg255/microbundle-package-template',
       },
       {
-        name: 'Tsup, typescript',
+        name: 'Tsup, Typescript',
         color: green,
         githubRepo: 'https://github.com/hunghg255/npm-package-template',
       },
       {
-        name: 'unbuild, typescript',
+        name: 'unbuild, Typescript',
         color: lightBlue,
         githubRepo: 'https://github.com/hunghg255/unbuild-package-template.git',
       },
@@ -145,14 +145,19 @@ export const templates = [
         githubRepo: 'https://github.com/hunghg255/tsup-svelte-package-template.git',
       },
       {
-        name: 'bunchee, typescript',
+        name: 'Bunchee, Typescript',
         color: cyan,
         githubRepo: 'https://github.com/hunghg255/bunchee-package.git',
       },
       {
-        name: 'bunchee, reactjs, typescript',
+        name: 'Bunchee, React, Typescript',
         color: blue,
-        githubRepo: 'https://github.com/hunghg255/bunchee-reactjs-package.git',
+        githubRepo: 'https://github.com/hunghg255/bunchee-React-package.git',
+      },
+      {
+        name: 'Rslib, Typescript',
+        color: lightRed,
+        githubRepo: 'https://github.com/hunghg255/rslib-package.git',
       },
     ],
   },

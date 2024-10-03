@@ -53,13 +53,16 @@ bunx create-template-fe@latest
   |- Sveltekit, Tailwindcss, Typescript
 
 - Template create a package
-  |- Rollup, Reactjs, Typescript
-  |- Microbundle, Reactjs, Typescript
+  |- Rollup, React, Typescript
+  |- Microbundle, React, Typescript
   |- Microbundle, Typescript
   |- Tsup, typescript
   |- unbuild, typescript
   |- Rollup, Svelte, Typescript
   |- Tsup, Svelte, Typescript
+  |- Bunchee, typescript
+  |- Bunchee, React, typescript
+  |- Rslib, typescript
 
 - Template create a blog
   |- Docusaurus, Typescript, Embeded Expo (React native), Stackblitz
