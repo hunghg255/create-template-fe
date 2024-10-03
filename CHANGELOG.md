@@ -1,3 +1,9 @@
+## [v2.1.20](https://github.com/hunghg255/create-template-fe/compare/v2.1.19...v2.1.20) - 2024-10-03
+### &nbsp;&nbsp;&nbsp;🏡 Chores
+
+- Update &nbsp;-&nbsp; by **hunghg255** [<samp>(f7b45)</samp>](https://github.com/hunghg255/create-template-fe/commit/f7b45b3)
+- Update template rslib &nbsp;-&nbsp; by **hunghg255** [<samp>(6a687)</samp>](https://github.com/hunghg255/create-template-fe/commit/6a68703)
+- Release v2.1.20 &nbsp;-&nbsp; by **hunghg255** [<samp>(fc6b2)</samp>](https://github.com/hunghg255/create-template-fe/commit/fc6b2bf)
 ## [v2.1.19](https://github.com/hunghg255/create-template-fe/compare/v2.1.18...v2.1.19) - 2024-06-18
 ### &nbsp;&nbsp;&nbsp;🏡 Chores
 
