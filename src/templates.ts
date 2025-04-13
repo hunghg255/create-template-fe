@@ -36,17 +36,12 @@ export const templates = [
     color: blue,
     variants: [
       {
-        name: 'Vitejs, React18, Typescript',
+        name: 'Vitejs, React, Typescript',
         color: green,
         githubRepo: 'https://github.com/hunghg255/vite-react-ts.git',
       },
       {
-        name: 'Vitejs, React18, Typescript, SWC',
-        color: lightRed,
-        githubRepo: 'https://github.com/hunghg255/vite-react-swc-init.git',
-      },
-      {
-        name: 'Vitejs, Antd, Jotail, i18n, Typescript',
+        name: 'Vitejs, React, Antd, Jotail, i18n, Typescript',
         color: yellow,
         githubRepo: 'https://github.com/hunghg255/vite-react-antd.git',
       },
@@ -158,6 +153,11 @@ export const templates = [
         name: 'Rslib, Typescript',
         color: lightRed,
         githubRepo: 'https://github.com/hunghg255/rslib-package.git',
+      },
+      {
+        name: 'Tsdown, Typescript',
+        color: green,
+        githubRepo: 'https://github.com/hunghg255/tsdown-template.git',
       },
     ],
   },
